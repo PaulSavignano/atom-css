@@ -1,0 +1,92 @@
+
+
+// style the background color of the tree view
+.tree-view {
+  // background-color: whitesmoke;
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  //color: white;
+  background-color: #1d1f21;
+}
+
+atom-text-editor::shadow .gutter {
+  background-color: #303030;
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow expression
+atom-text-editor::shadow .cursor {
+  // border-color: red;
+}
+
+atom-text-editor::shadow {
+  // Class
+  .entity.name.type.class.js,
+  .support.class.js {
+    color: #89DDFF;
+    font-style: italic;
+    font-weight: bold;
+  }
+  // Const
+  .constant.other.js,
+  .variable.other.module.js {
+    color: #89DDFF;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  // Function Variable
+  .variable.language.js {
+    color: #89DDFF;
+  }
+
+  // Argument
+  .variable.other.object.property.js,
+  .variable.other.property.js,
+  .support.variable.property.dom.js {
+    color: #ffffff;
+  }
+
+  // Object
+  .variable.other.object.js,
+  .punctuation.definition.brace.curly.start.js,
+  .punctuation.definition.brace.curly.end.js,
+  .punctuation.definition.function.body.begin.bracket.curly.js,
+  .punctuation.definition.function.body.end.bracket.curly.js,
+  .source.js.jsx > .meta.brace.curly.js,
+  .meta.method-call.js > .meta.brace.curly.js {
+    color: #89DDFF;
+  }
+
+  // Function
+  .entity.name.function.js,
+  .support.function.dom.js,
+  .support.function.console.js,
+  .punctuation.definition.parameters.begin.bracket.round.js,
+  .punctuation.definition.parameters.end.bracket.round.js,
+  .brace.round.js,
+  .brace.curly.js {
+    color: #a6e22e;
+  }
+
+  .variable.language.default.js {
+    color: #c792ea;
+  }
+
+  // Function Argument
+  .brace.curly.js,
+  .meta.method-call.js {
+    color: #ffffff;
+  }
+
+  .source.js.jsx {
+    color: #ffffff;
+  }
+
+
+
+  .keyword.control.js {
+    color: #82AAFF;
+  }
+}
